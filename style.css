@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/**MAIN SEKTION**/
+#chasacademy__hero{
+    height: 98vh;
+    background-image: url(/img/start-hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chasacademy__header{
+    background-color: transparent !important;
+    height: 100px;
+    padding: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.chasacademy__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chasacedemy__logo{
+    height: 100%;
+}
+
+.logo{
+    height: 70px;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+.links{
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 18px;
+}
+
+#btn{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 8px 30px;
+    background-color: #1c64a0;
+    transition-duration: 0.4s;
+}
+
+#btn:hover{
+    background-color: transparent;
+    border: 1px solid #1c64a0;
+    color: #1c64a0;
+}
+
+.chasacademy__hamburger{
+    display: none;
+}
+
+.hamburger__line{
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin-bottom: 8px;
+    background-color: #fefefe;
+}
+/**END OF MAIN**/
+
+.chasacademy__main__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__heading{
+    color: #fefefe;
+    font-size: 70px;
+    font-weight:400;
+    padding-top: 100px;
+    width: 50%;
+    text-align: center;
+}
+
+.hero__paragraf{
+    color: #fefefe;
+    font-size: 20px;
+    padding-top: 50px;
+    font-weight: 400;
+    width: 20%;
+    text-align: center;   
+}
+
+.ctn{
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 15px 25px;
+    background-color: #1c64a0;
+    font-size: 20px;
+    color: #e2e2e2;
+    position: fixed;
+    bottom: 50px;
+    z-index: 1;
+    transition-duration: 0.4s;
+}
+
+.ctn:hover{
+    border: 1px solid #222222;
+    background: transparent;
+    color: #222222;
+}
+/**OM SEKTION**/
+.chasacademy__om__section{
+    background-color: #F8F9F9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.image__container{
+    height: 50%;
+}
+
+.about__img{
+    height:500px;
+}
+
+.about__container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about__title{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about__paragraf{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about__btns{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.about__ansoka__btn{
+    border: 1px solid #222222;
+    border-radius: 50px;
+    padding: 15px 60px;
+    background-color: #222222;
+    color: #fefefe;   
+    text-transform: uppercase;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    transition-duration: 0.4s;
+}
+
+.about__ansoka__btn:hover{
+    background-color: transparent;
+    border: 1px solid #222222;
+    color: #222222;
+}
+
+.info__btn{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 50px;
+    padding: 15px 50px;
+    color: #000;   
+    text-transform: uppercase;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    transition-duration: 0.4s;
+}
+
+.info__btn:hover{
+    border: 1px solid rgb(37, 37, 37);
+    background-color: #222222;
+    color: #e2e2e2;
+}
+
+/**AKTUELL SEKTION**/
+.chasacademy__aktuellt__section{
+    display: flex;
+    flex-direction: column;
+}
+
+.title__container{
+    min-height: 40vh;
+    background-color: lightblue;
+    position: relative;
+}
+
+.aktuellt__title{
+    font-size: 100px;
+    font-weight: 300;
+    position: absolute ;
+    bottom: 0;
+    padding-left: 130px;
+}
+
+.card__container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #F8F9F9;
+}
+
+.cards{
+    border-radius: 20px;
+    width: 410px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2e2;
+    }
+
+.card__img{
+    width: 100%;
+}
+
+.code__img{
+    height: 250px;
+    width: 100%;
+}
+
+.card__title{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.card__info{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card__btn{
+    text-decoration: none;
+    border: 1px solid #c7ad3b;
+    background-color: #c7ad3b;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #000;
+    transition-duration: 0.4s;
+}
+
+.card__btn:hover{
+    background-color: #1c64a0;
+    color: #e2e2e2;
+    border: 1px solid #1c64a0;
+}
+
+/**FOOTER SEKTION**/
+.chasacademy__footer{
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__dubble__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: end;
+}
+
+.footer__links{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.footer__title{
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    font-weight: 400;
+}
+
+.footer__btn{
+    border: 1px solid #000;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition-duration: 0.4s;
+}
+
+.footer__btn:hover{
+    border: 1px solid #000;
+    background-color: #222222;
+    color: #e2e2e2;
+}
+
+.footer__canvas__btn{
+    border: 1px solid #000;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition-duration: 0.4s;
+}
+
+.footer__canvas__btn:hover{
+    border: 1px solid #000;
+    background-color: #222222;
+    color: #e2e2e2;
+}
+
+.footer__container__1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__container__2{
+    text-align: center;
+}
+
+.contact__container__3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo{
+    height: 150px;
+}
+
+/******************Responsive****************/
+@media (max-width: 760px) {
+    .chasacademy__hero{
+        height: 70vh;
+    }
+
+    .chasacademy__header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .chasacademy__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+
+    .header__nav{
+        display: none !important;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #fefefe;
+        position: absolute;
+        margin-top: 780px;
+        padding-left: 30px;
+        padding-top:50px;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .chasacademy__logo{
+        margin-left: 20px;
+    }
+
+    .chasacademy__hamburger{
+        display: block;
+        cursor: pointer;
+        padding-right: 30px;
+    }
+
+    .links{
+        color: #000;
+    }
+
+    #btn{
+        color: #fefefe;
+    }
+    /**MAIN-SECTION**/
+    .hero__heading{
+        padding-top: 50px;
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .hero__paragraf{
+        font-size: 15px;
+        padding-top: 25px;
+        width: 50%;
+    }
+
+    .ctn{
+        margin-top: 50px;
+        border-radius: 50px;
+        padding: 12px 20px;
+        background-color: #1c64a0;
+        font-size: 10px;
+        color: #e2e2e2;
+    }
+    /**ABOUT SECTION**/
+    .chasacademy__om__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .about__img{
+        padding: 30px;
+    }
+
+    .about__container{
+        width: 100%;
+    }
+
+    .about__paragraf{
+        font-size: 15px;
+    }
+
+    .about__btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 190px;
+    }
+
+    .about__ansoka__btn{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .info__btn{
+        text-align: center;
+        font-size: 10px;
+    }
+    /**AKTUELLT SECTION**/
+    .title__container{
+        min-height: 20vh;
+    }
+
+    .aktuellt__title{
+        font-size: 60px;
+        padding-left: 20px;
+    }
+
+    .card__container{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .cards{
+        width: 380px;
+    }
+
+    .card__title{
+        font-size: 30px;
+    }
+
+    .card__info{
+        font-size: 20px;
+    }
+    /**FOOTER SECTION**/
+    .chasacademy__footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__dubble__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
